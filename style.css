@@ -16,7 +16,6 @@ body {
 }
 
 .navbar {
-    width:100%;
     background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
     padding: 30px 60px;
     font-weight: bold;
@@ -162,11 +161,17 @@ body {
 }
 
 /* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices */
 @media (max-width: 500px) {
     .settings {
-        /* Force single column layout */
         grid-template-columns: 1fr;
     }
-
+    .navbar {
+        padding: 20px; 
+    }
+    .navbar h1 {
+        font-size: 24px; 
+    }
 }
+
 
