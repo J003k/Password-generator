@@ -6,7 +6,9 @@
     
     --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+* {
+    box-sizing: border-box;
+}
 body {
     background: linear-gradient(var(--bg-top), var(--bg-bottom));
     color: var(--text-color);
@@ -166,4 +168,5 @@ body {
         /* Force single column layout */
         grid-template-columns: 1fr;
     }
+
 }
