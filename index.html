@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Password Generator</h1>
+    </div>
+
+    <div class="container">
+        <h2>Create a Secure Password</h2>
+        
+
+        <div class="password-display">
+            <input type="text" id="passwordBox">
+            <button id="copyBtn">Copy</button>
+        </div>
+
+        <p>Use the options below to customize your password.</p>
+        <div class="length-details">
+            <p>Password Length</p>
+            
+            <span id="lengthVal">10</span>
+        </div>
+        <input type="range" id="lengthSlider" min="8" max="20" value="10">
+        <br>
+        <div class="settings">
+            <label> <input type="checkbox" id="upperCase" checked> Uppercase Letters (A-Z) </label>
+            <label> <input type="checkbox" id="lowerCase" checked> Lowercase Letters (a-z) </label>
+            <label> <input type="checkbox" id="numbers" checked> Numbers (0-9) </label>
+            <label> <input type="checkbox" id="symbols" checked> Symbols (!@#$) </label>
+        </div>
+        <br>
+        <button id="generateBtn">generate password</button>
+    </div>
+
+
+    <script src="logic.js"></script>
+</body>
+</html>
